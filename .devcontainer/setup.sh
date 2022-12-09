@@ -1,10 +1,6 @@
-#!/usr/bin/env bash
-
-set -e
-
-sudo apt-get update
-sudo apt-get -y install --no-install-recommends apt-utils dialog 2>&1
-sudo apt-get install -y \
+apt-get update
+apt-get -y install --no-install-recommends apt-utils dialog 2>&1
+apt-get install -y \
   curl \
   git \
   sudo \
@@ -12,9 +8,9 @@ sudo apt-get install -y \
   wget \
   unzip
   
-sudo add-apt-repository universe
-sudo apt install fonts-firacode
+add-apt-repository universe
+apt install fonts-firacode
 
-sudo apt-get autoremove -y
-sudo apt-get autoremove -y
-sudo rm -rf /var/lib/apt/lists/*
+apt-get autoremove -y
+apt-get autoremove -y
+rm -rf /var/lib/apt/lists/*
