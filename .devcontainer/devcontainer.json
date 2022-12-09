@@ -1,0 +1,24 @@
+{
+    "name": "DiaxuDev's Personal Codespace",
+    "extensions": [
+        "cschleiden.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "ms-vsliveshare.vsliveshare",
+        "visualstudioexptteam.vscodeintellicode",
+        "esbenp.prettier-vscode",
+        "PKief.material-icon-theme",
+        "DiaxManPl.diamondtheme",
+        "usernamehw.errorlens"
+
+    ],
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "workbench.colorTheme": "Diamond Theme",
+        "workbench.iconTheme": "material-icon-theme",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
