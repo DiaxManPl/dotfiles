@@ -12,9 +12,22 @@ sudo apt-get install -y \
   wget \
   unzip
   
-wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
-sudo unzip Fira_Code_v6.2.zip -d /usr/share/fonts
-sudo fc-cache -f -v
+
+fonts_dir="${HOME}/.local/share/fonts"
+if [ ! -d "${fonts_dir}" ]; then
+    echo "mkdir -p $fonts_dir"
+    mkdir -p "${fonts_dir}"
+else
+    echo "Found fonts dir $fonts_dir"
+fi
+
+version=6.2
+curl --fail --location --show-error https://github.com/tonsky/FiraCode/releases/download/${version}/Fira_Code_v${version}.zip --output ${zip}
+unzip -o -q -d ${fonts_dir} ${zip}
+rm ${zip}
+
+echo "fc-cache -f"
+fc-cache -f
 
 sudo apt-get autoremove -y
 sudo apt-get autoremove -y
