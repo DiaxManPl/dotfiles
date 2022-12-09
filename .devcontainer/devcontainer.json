@@ -13,7 +13,9 @@
         "usernamehw.errorlens"
 
     ],
-    "dockerFile": "Dockerfile",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "settings": {
         "workbench.colorTheme": "Diamond Theme",
         "workbench.iconTheme": "material-icon-theme",
