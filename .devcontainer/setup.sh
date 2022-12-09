@@ -1,5 +1,4 @@
 apt-get update
-apt-get -y install --no-install-recommends apt-utils dialog 2>&1
 apt-get install -y \
   curl \
   git \
