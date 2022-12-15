@@ -1,7 +1,7 @@
 #!/bin/env bash
 
-apt-get update
-apt-get install -y \
+sudo apt-get update
+sudo apt-get install -y \
   curl \
   git \
   sudo \
@@ -9,9 +9,7 @@ apt-get install -y \
   wget \
   unzip
   
-add-apt-repository universe
-apt install fonts-firacode
+sudo add-apt-repository universe
+sudo apt install fonts-firacode
 
-apt-get autoremove -y
-apt-get autoremove -y
-rm -rf /var/lib/apt/lists/*
+sudo apt-get autoremove -y
